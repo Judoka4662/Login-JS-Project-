@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login JS project</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body id="">
+  <div class="header">
+    <h1 id="heading">Welcome</h1>
+    <p>Please sign in</p>
+  </div>
+
+  <div class="container">
+
+    <!--<button onmouseout="clearDate()"onmouseover="showDate()">Show Date</button>
+    <h1 id="time"></h1>-->
+
+
+  <form method="post" action="something.php" name="myForm" onsubmit="return validateForm()">
+
+  <div>
+    <label>First Name</label>
+    <input type="text" name="firstName" id="firstName"/>
+  </div>
+
+  <br/>
+
+  <div>
+    <label>Last Name</label>
+    <input type="text" name="lastName" id="lastName"/>
+  </div>
+
+  <br/>
+
+  <br/>
+
+  <input type="submit" value="Submit"/>
+  </form>
+</div>
+
+  <script>
+
+  function validateForm(){
+
+    var firstName = document.forms["myForm"]["firstName"].value;
+
+    var lastName = document.forms["myForm"]["lastName"].value;
+
+    if(firstName == null || firstName == ""){
+      alert("First name is required");
+      return false;
+    }
+
+    if(firstName.length < 3){
+      alert("First name must be at least three charts");
+      return false;
+    }
+
+    if(lastName == null || lastName == ""){
+      alert("Last name is required");
+      return false;
+    }
+
+    if(lastName.length < 3){
+      alert("Last name must be at least three charts");
+      return false;
+    }
+
+  }
+
+  </script>
+
+</body>
+</html>
